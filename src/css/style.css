@@ -1,0 +1,590 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+@font-face {
+    font-family: 'Raleway' sans-serif;
+    src: url(../fonts/static/Raleway-Regular.ttf);
+}
+
+
+/* aside styles */
+
+body{
+
+   
+    background-color: rgb(221, 221, 221);
+}
+
+.bigcontainer{
+
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+aside{
+
+    position: fixed;
+    width: 300px;
+    height: 1300px;
+    padding-top: 80px;
+    text-align: center;
+    background-color: white;
+    /* border-right: 1px solid gray; */
+}
+
+aside h2{
+
+ 
+    font-family: 'Raleway' sans-serif ;
+    font-size: 24px;
+    font-weight: 600;
+    color: #757575;
+    letter-spacing: 2px;
+    
+}
+
+aside h2.second{
+
+    margin-top: 5px;
+}
+
+aside .aside_list{
+
+    margin-top: 80px;
+}
+
+aside .aside_list ul{
+
+    list-style-type: none;
+}
+
+.aside_list li{
+
+    list-style-type: none;
+    padding: 20px;
+    /* padding-top: 8px; */
+}
+
+.aside_list li a{
+
+    font-size: 18px;
+    font-family: 'Raleway' sans-serif ;
+    text-decoration: none;
+    color: #757575;
+    font-weight: 600;
+}
+
+.aside_list li:hover{
+
+    background-color: #a0a0a0;
+    transition: 1s all;    
+}
+
+.aside_list li:hover a{
+
+      color: black;
+}
+
+/* aside styles */
+
+/* section photo styles */
+section.photo{
+
+   height: auto;
+   height: 1350px;
+  /* width: 100%; */
+   margin-top: 0;
+    margin-left: 300px;
+   background-color: rgb(221, 221, 221);
+}
+.photo_flex{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo_box{
+
+   position: relative;
+   width: 33%;
+   height: 420px;
+   height: 470px;
+   opacity: 0.7;
+   
+}
+
+.photo_box:nth-child(1){
+
+    background-image: url(../images/natureboy.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(2){
+
+    background-image: url(../images/boy.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(3){
+
+    background-image: url(../images/girl.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(4){
+
+    background-image: url(../images/girl_mountain.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(5){
+
+    background-image: url(../images/man_bench.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(6){
+
+    background-image: url(../images/girl_train.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(7){
+
+    background-image: url(../images/girl\ \(1\).jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(8){
+
+    background-image: url(../images/natureboy.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(9){
+
+    background-image: url(../images/closegirl.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo_box:nth-child(10){
+
+    background-image: url(../images/man_bench.jpg);
+    background-position: 100 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.photo_box:hover{
+
+   background-color: black;
+   opacity: 1;
+}
+
+.number_block .number_flex{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.number_block{
+
+    margin-top: 20px;
+    font-size: 15px;
+   
+}
+
+.number_flex .number_box{
+
+ 
+    width: 5%;
+    height: 38px;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.number_box:nth-child(2){
+
+    background-color: black;
+    color: white;
+}
+
+.number_box:hover{
+
+    background-color: black;
+    color: white;
+}
+/* section photo styles */
+
+/* section aboutme styles */
+section.aboutme{
+
+    margin-top: 150px;
+    margin-left: 300px;
+    background-color: rgb(102, 100, 100);
+    padding-top: 40px;
+    height: 1950px;
+
+}
+
+.container{
+
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.woman_block{
+
+    max-width: 600px;
+    height: auto;
+    margin-top: 40px;
+}
+
+section.aboutme h1{
+
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.aboutme_text{
+
+    margin-top: 50px;
+}
+
+.aboutme_text h3{
+
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+} 
+
+.aboutme_text p{
+
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 20px;
+} 
+
+.skils_block{
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 30px 0;
+    margin-top: 20px;
+
+}
+
+.skils_block h4{
+
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.photografy p{
+
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #f0efef;
+}
+
+.photografy .photografy_box{
+
+    width: 100%;
+    height: 31px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.photografy_box .gray_box{
+
+    height: 31px;
+    width: 95%;
+    background-color: rgb(146, 145, 145);
+    text-align: center;
+   padding-top: 10px;
+
+}
+
+
+.design p{
+
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #f0efef;
+}
+
+.design .design_box{
+
+    width: 100%;
+    height: 31px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.design_box .gray_box{
+
+    height: 31px;
+    width: 85%;
+    background-color: rgb(146, 145, 145);
+    text-align: center;
+   padding-top: 10px;
+
+}
+
+.photoshop p{
+
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #f0efef;
+}
+
+.photoshop .photoshop_box{
+
+    width: 100%;
+    height: 31px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.photoshop_box .gray_box{
+
+    height: 31px;
+    width: 80%;
+    background-color: rgb(146, 145, 145);
+    text-align: center;
+   padding-top: 10px;
+
+}
+
+.skils_block button{
+
+    width: 30%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.table_block{
+
+    margin-top: 25px;
+}
+
+.table_block h4{
+
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table_flex{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic_block{
+
+    width: 45%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.pro_block{
+
+    width: 50%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.basic_block:hover{
+
+    opacity: 1;
+}
+
+.pro_block:hover{
+
+    opacity: 1;
+}
+
+.tittle{
+
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.table_box{
+
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    background-color: white;
+}
+
+.month_box{
+
+    width: 100%;
+    padding: 35px;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+}
+
+.month_box h5{
+
+ font-size: 24px;
+ font-weight: 600;
+ margin-bottom: 5px;
+}
+
+
+.btn_box{
+
+    background-color: rgb(223, 222, 222);
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+.btn_box button{
+
+    width: 54%;
+    padding: 15px;
+    font-size: 20px;
+}
+/* .aboutme_text p{
+
+    color: white;
+   font-size: 17px;
+   line-height: 1;
+}
+
+/* section aboutme styles */
+/* 
+section contact styles */
+
+section.contact{
+
+  
+    margin-left: 300px;
+    padding-top: 40px;
+}
+
+
+section.contact h4{
+
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contact p{
+
+    font-size: 16px;
+}
+
+.form{
+
+    margin-top: 20px;
+}
+
+.form form input{
+
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+  
+}
+
+.input_box{
+
+    margin-top: 20px;
+}
+
+.contact button{
+
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* 
+section contact styles */
